@@ -8,11 +8,18 @@ Bundler.require(*Rails.groups)
 
 module Removal
   class Application < Rails::Application
-    # Initialize configuration defaults for originally generated Rails version.
+    config.x.settings = Rails.application.config_for :settings
     config.load_defaults 5.1
-
-    # Settings in config/environments/* take precedence over those specified here.
-    # Application configuration should go into files in config/initializers
-    # -- all .rb files in that directory are automatically loaded.
+    config.after_initialize do
+      # Select the "main" menu
+      PushType.menu :main do
+        # Append a new item to end of the menu
+        item :admin do
+          text  { 'Admin' }
+          link  { '/admin' }
+          link_options data: { turbolinks: false }
+        end
+      end
+    end
   end
 end

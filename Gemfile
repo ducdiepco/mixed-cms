@@ -8,6 +8,8 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
+# Added at 2018-01-16 10:41:55 -0700 by ducdiep:
+gem "pg", "~> 0.21.0"
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
 # Use Puma as the app server
@@ -25,7 +27,6 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
-gem 'pg', '~> 0.18.4'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
@@ -35,11 +36,12 @@ gem 'pg', '~> 0.18.4'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  # Adds support for Capybara system testing and selenium driver
+  gem "awesome_print"
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
+  gem "factory_bot"
+  gem "pry-byebug"
+  gem "pry-rails"
 end
 
 group :development do
@@ -53,3 +55,19 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Added at 2018-01-13 17:31:45 -0700 by ducdiep:
+gem "appengine", "~> 0.4.5"
+
+gem 'bootstrap'
+gem 'jquery-rails'
+gem 'push_type', '~> 0.11.2'
+gem 'dragonfly-s3_data_store'
+gem 'dragonfly-google_data_store', :git => 'https://github.com/chemic/dragonfly-google_data_store.git'
+gem "administrate"
+gem 'font-awesome-sass', '~> 4.7.0'
+gem 'flex-slider-rails'
+gem 'material_components_web-sass'
+gem 'canonical-rails', github: 'jumph4x/canonical-rails'
+gem "cells-rails"
+gem "cells-erb"

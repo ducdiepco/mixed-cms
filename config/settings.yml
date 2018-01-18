@@ -1,0 +1,12 @@
+default: &default
+  cloud_storage:
+    project_id: removal-mugshot
+    bucket_name: removal-mugshot.appspot.com 
+    access_key_id: GOOGTRBJN6WVDCK5SLCY
+    secret_access_key: alJ0SnSRERv9JURV7c9Eg4FmgQZt5kDXPaFJjd/n
+
+development:
+  <<: *default
+
+production:
+  <<: *default

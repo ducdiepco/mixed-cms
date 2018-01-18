@@ -1,0 +1,214 @@
+/* ====== Header ======= */
+.header {
+    background: rgba(53, 55, 60, 0.8);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    min-height: 70px;
+    .logo {
+        font-size: 20px;
+        font-weight: 500;
+        float: left;
+        margin-top: 18px;
+        margin-bottom: 0;
+        .text {
+            margin-left: 5px;
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+    }
+}
+
+/* ====== Nav ======= */
+.main-nav {
+    
+    .nav {
+        .nav-item {
+            font-weight: normal;
+            text-transform: uppercase;
+            font-size: 12px;
+            display: block;
+            
+            &.active {
+                a {
+                    color: #fff;
+                    background: none;
+                    font-weight: bold;
+                }
+            }
+            a {
+                color: rgba(256, 256, 256, 0.8);
+                display: block;
+
+                &:hover {  
+                    color: #fff;    
+                    background: none;         
+                }
+                &:focus {
+                    outline: none;
+                    background: none;
+                }
+                &:active {
+                    outline: none;
+                    background: none;
+                }
+            }    
+            &.active {
+                color: #fff;             
+            }
+            &.last {
+                margin-right: 0;
+            }
+            
+            .btn-signup {
+                background: rgba(0, 0, 0, 0.4);
+                padding: 5px 10px;
+                @include border-radius(4px);
+                position: relative;
+                top: 20px;
+                &:active {
+                    background: rgba(0, 0, 0, 0.4);
+                }
+                &:hover {
+                    background: rgba(0, 0, 0, 0.6);
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+            
+        }
+
+        &.active {
+            position: relative;
+            & > a {
+                background: darken($color-primary, 10%);
+                color: #fff;
+                color: rgba(256, 256, 256, 0.8);
+                &:before {
+                    content: "\f0d8";
+                    position: absolute;
+                    bottom: -8px;
+                    left: 0;
+                    text-align: center;
+                    font-family: FontAwesome;    
+                    display: block;
+                    font-size: 12px;
+                    width: 100%;                      
+                }   
+                &.dropdown-toggle:before {
+                    display: none;
+                }
+                
+            }                      
+        }
+
+        .dropdown-menu {
+            @include border-radiuses(0, 4px, 4px, 0);
+            padding: 0; 
+            margin: 0;
+            font-size: 14px;
+            border:none;
+            text-transform: none;
+            min-width: 200px;
+            background: rgba(53, 55, 60, 0.8);     
+
+            a {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+                padding: 8px 20px;
+                color: rgba(256, 256, 256, 0.8); 
+                @include opacity(1);   
+                display: block;            
+                
+                &:hover {
+                    background: $text-color-primary;
+                    color: #fff;
+                }
+            }
+        }
+        
+    }
+}
+
+.main-nav .dropdown-toggle::after {
+    display: none;
+}
+
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+
+/* Animated Hamburger Icon for Bootstrap */
+.header .container {
+    position: relative;
+}
+
+.navbar-toggler {
+    padding: 0 15px;
+    position: absolute;
+    right: 0;
+    top: -33px;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: 0;
+}
+
+.navbar-toggler span {
+   display: block;
+   background-color: #fff;
+   height: 3px;
+   width: 24px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   -webkit-transform: rotate(0deg);
+   -moz-transform: rotate(0deg);
+   -o-transform: rotate(0deg);
+   transform: rotate(0deg);
+   position: relative;
+   left: 0;
+   opacity: 1;
+   @include border-radius(1px);
+}
+
+.navbar-toggler span:nth-child(1),
+.navbar-toggler span:nth-child(3) {
+   -webkit-transition: transform .35s ease-in-out;
+   -moz-transition: transform .35s ease-in-out;
+   -o-transition: transform .35s ease-in-out;
+   transition: transform .35s ease-in-out;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    opacity: 0.9;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+    height: 12px;
+    visibility: hidden;
+    background-color: transparent;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+    position: absolute;
+    left: 12px;
+    top: 10px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    opacity: 0.9;
+}

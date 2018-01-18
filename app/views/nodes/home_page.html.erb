@@ -1,0 +1,16 @@
+<% title @node.title %>
+<% meta_description @node.meta_description %>
+<% meta_keywords @node.keywords.join(',') %>
+
+<h1><%= @node.title %></h1>
+<p>This is a generated HomePage template.</p>
+<p>Find me at: app/views/nodes/home_page.html.erb</p>
+
+<div>
+  <div>Meta description:</div>
+  <div><%= @node.meta_description %></div>
+</div>
+<div>
+  <div>Meta keywords:</div>
+  <div><%= @node.meta_keywords %></div>
+</div>

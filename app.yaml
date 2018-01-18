@@ -2,5 +2,19 @@ entrypoint: bundle exec rackup --port $PORT
 env: flex
 runtime: ruby
 
+manual_scaling:
+  instances: 1
+resources:
+  cpu: 1
+  memory_gb: 0.5
+  disk_size_gb: 10
+
 env_variables:
   SECRET_KEY_BASE: 'edf79cef8fb622ea7bdfce2e27fcad8dcb9892b2c3e19d7a755b3ae49a95461d3d03c1ba6a7e0e2f0e7d72380b74e8064f9976ed2ccc6b7449f5c5d1c4b1128b'
+  DB_USERNAME: 'removal-mugshot'
+  DB_HOST: '/cloudsql/removal-mugshot:us-central1:removal-mugshot-db'
+  DB_PASSWORD: "GM`FSa9w@/aE7',M"
+  DB_NAME: 'removal-mugshot-production'
+
+beta_settings:
+  cloud_sql_instances: 'removal-mugshot:us-central1:removal-mugshot-db'
