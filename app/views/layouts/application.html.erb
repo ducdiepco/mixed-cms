@@ -8,9 +8,9 @@
     <%= canonical_tag -%>
   </head>
 
-  <body>
-    <%= render "layouts/header" %>
+  <body class="<%= yield (:body_class) %>">
+    <%= cell(:header, nil) %>
     <%= yield %>
-    <%= render "layouts/footer" %>
+    <%= cell(:footer, nil) %>
   </body>
 </html>

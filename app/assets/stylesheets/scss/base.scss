@@ -24,11 +24,11 @@ a {
   @include transition (all 0.4s ease-in-out);
   &:hover, &:active {
     text-decoration: underline;
-    color: darken($color-primary, 5%);        
+    color: darken($color-primary, 5%);
   }
   &:focus {
     text-decoration: none;
-    color: darken($color-primary, 5%); 
+    color: darken($color-primary, 5%);
     outline: none;
   }
 }
@@ -46,7 +46,7 @@ a.btn-cta, .btn-cta {
   font-weight: 900;
 }
 
-a.btn-primary, .btn-primary { 
+a.btn-primary, .btn-primary {
   background: $color-secondary;
   border: 2px solid $color-secondary;
   color: #fff;
@@ -59,7 +59,7 @@ a.btn-primary, .btn-primary {
   }
 }
 
-a.btn-secondary, .btn-secondary { 
+a.btn-secondary, .btn-secondary {
   background: $color-primary;
   border: 2px solid $color-primary;
   color: #fff;
@@ -72,7 +72,7 @@ a.btn-secondary, .btn-secondary {
   }
 }
 
-a.btn-ghost, .btn-ghost { 
+a.btn-ghost, .btn-ghost {
   background: none;
   border: 2px solid #fff;
   color: #fff;
@@ -85,7 +85,7 @@ a.btn-ghost, .btn-ghost {
   }
 }
 
-a.btn-ghost-alt, .btn-ghost-alt { 
+a.btn-ghost-alt, .btn-ghost-alt {
   background: none;
   border: 2px solid $text-color-secondary;
   color: $text-color-secondary;
@@ -155,7 +155,7 @@ a.btn-download-app, .btn-download-app {
   }
   .fa {
     position:absolute;
-    left: 10px; 
+    left: 10px;
     top: 10px;
     font-size: 24px;
   }
@@ -185,7 +185,7 @@ a.btn-download-app, .btn-download-app {
   &:focus {
     border-color: darken($grey, 10%);
     @include box-shadow(none);
-  }    
+  }
 }
 
 textarea.form-control {
@@ -197,7 +197,7 @@ input[type="text"],
 input[type="email"],
 input[type="password"],
 input[type="submit"],
-input[type="button"], 
+input[type="button"],
 textarea
 {
   appearance: none;  /* for mobile safari */
@@ -300,7 +300,7 @@ textarea
   top: 0;
   left: 0;
   height: 500px;
-  background: $text-color-primary; 
+  background: $text-color-primary;
 }
 
 .hero-holder {
@@ -308,7 +308,7 @@ textarea
 }
 
 .hero-mask-gradient {
-  @include gradient (rgba(0, 0, 0, 0.6) 50%, transparent);
+  @include gradient(rgba(0, 0, 0, 0.6) 50%, transparent);
   display: block;
   position: absolute;
   width: 100%;

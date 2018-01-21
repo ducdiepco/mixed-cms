@@ -15,6 +15,4 @@
 //= require popper
 //= require bootstrap-sprockets
 //= require turbolinks
-//= require jquery.flexslider-min
-//= require custom 
 //= require_tree .

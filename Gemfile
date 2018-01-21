@@ -42,6 +42,7 @@ group :development, :test do
   gem "factory_bot"
   gem "pry-byebug"
   gem "pry-rails"
+  gem "rspec-rails", "~> 3.6"
 end
 
 group :development do
@@ -51,6 +52,12 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+end
+
+group :test do
+  gem "shoulda-matchers"
+  gem "database_cleaner"
+  gem "webmock"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -71,3 +78,4 @@ gem 'material_components_web-sass'
 gem 'canonical-rails', github: 'jumph4x/canonical-rails'
 gem "cells-rails"
 gem "cells-erb"
+gem 'dry-system'

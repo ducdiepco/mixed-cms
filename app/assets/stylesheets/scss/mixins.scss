@@ -50,9 +50,9 @@
   border-bottom-left-radius:          $bottomleft;
   border-top-left-radius:             $topleft;
 
-  -moz-background-clip:    padding; 
-  -webkit-background-clip: padding-box; 
-  background-clip:         padding-box; 
+  -moz-background-clip:    padding;
+  -webkit-background-clip: padding-box;
+  background-clip:         padding-box;
 }
 
 @mixin opacity ($opacity: 0.5) {
@@ -63,11 +63,11 @@
 
 @mixin gradient ($startColor: #eee, $endColor: white) {
   background-color: $startColor;
-  background: -webkit-gradient(linear, left top, left bottom, from($startColor), to($endColor));
-  background: -webkit-linear-gradient(top, $startColor, $endColor);
   background: -moz-linear-gradient(top, $startColor, $endColor);
   background: -ms-linear-gradient(top, $startColor, $endColor);
   background: -o-linear-gradient(top, $startColor, $endColor);
+  background: -webkit-gradient(linear, left top, left bottom, from($startColor), to($endColor));
+  background: -webkit-linear-gradient(top, $startColor, $endColor);
 }
 @mixin horizontal-gradient ($startColor: #eee, $endColor: white) {
   background-color: $startColor;
@@ -85,10 +85,10 @@
 }
 
 @mixin transition ($transition) {
-  -webkit-transition: $transition;  
+  -webkit-transition: $transition;
   -moz-transition:    $transition;
-  -ms-transition:     $transition; 
-  -o-transition:      $transition;  
+  -ms-transition:     $transition;
+  -o-transition:      $transition;
 }
 @mixin transform($string){
   -webkit-transform:  $string;
