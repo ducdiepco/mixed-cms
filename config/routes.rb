@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  root 'welcome#index'
-
   # admin dashboard
   namespace :admin do
     resources :leads
@@ -9,5 +7,5 @@ Rails.application.routes.draw do
   end
 
   # cms admin
-  mount_push_type admin: 'cms'
+  mount_push_type admin: 'cms', front_end: '/article'
 end

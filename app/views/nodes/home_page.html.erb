@@ -1,16 +1,27 @@
-<% title @node.title %>
+<% title @node.meta_title %>
 <% meta_description @node.meta_description %>
-<% meta_keywords @node.keywords.join(',') %>
+<% meta_keywords @node.meta_keywords.join(',') %>
 
-<h1><%= @node.title %></h1>
-<p>This is a generated HomePage template.</p>
-<p>Find me at: app/views/nodes/home_page.html.erb</p>
+<% body_class "features-page" %>
+<%= cell(:heading_section, @node) %>
 
-<div>
-  <div>Meta description:</div>
-  <div><%= @node.meta_description %></div>
-</div>
-<div>
-  <div>Meta keywords:</div>
-  <div><%= @node.meta_keywords %></div>
-</div>
+<div class="page-nav-space-holder d-none d-md-block">
+  <div id="page-nav-wrapper" class="page-nav-wrapper text-center">
+    <div class="container">
+      <ul id="page-nav" class="nav page-nav list-inline">
+        <li class="nav-item"><a class="nav-link scrollto" href="#overview-section">Overview</a></li>
+        <li class="nav-item"><a class="nav-link scrollto"  href="#features-section">Key Features</a></li>
+        <li class="nav-item"><a class="nav-link scrollto"  href="#support-section">Support</a></li>
+        <li class="nav-item"><a class="nav-link scrollto"  href="#signup-section">Get Started</a></li>
+      </ul><!--//page-nav-->
+    </div>
+  </div><!--//page-nav-wrapper-->
+</div><!--//page-nav-space-holder-->
+
+<%= cell(:overview_section, @node) %>
+<%= cell(:benefit_section, @node) %>
+<%= cell(:press_section, @node) %>
+<%= cell(:features_section, @node) %>
+<%= cell(:lead_form, Lead.new) %>
+<%= cell(:customer_support, @node) %>
+<%= cell(:started_section, @node) %>

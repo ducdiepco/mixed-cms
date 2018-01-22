@@ -38,7 +38,7 @@
   top: 0;
   left: 0;
   height: 680px;
-  background: $text-color-primary; 
+  background: $text-color-primary;
 
   .flexslider {
     margin: 0;
@@ -164,7 +164,7 @@ body.sticky-page-nav .overview-section {
   padding-bottom: 15px;
   .logo {
     text-align: center;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
     img {
       margin: 0 auto;
     }
@@ -216,7 +216,7 @@ body.sticky-page-nav .overview-section {
     padding-bottom: 30px;
   }
   .review {
-    border-left: none; 
+    border-left: none;
     position: relative;
     font-size: 14px;
     padding: 30px 60px;
@@ -351,7 +351,7 @@ body.sticky-page-nav .overview-section {
       height: 32px;
       @include border-radius(50%);
       background: #fff;
-      color: #000; 
+      color: #000;
       padding-top: 8px;
       margin-bottom: 15px;
     }
@@ -441,7 +441,7 @@ body.sticky-page-nav .overview-section {
     background: #fff;
     display: inline-block;
     left: 50%;
-    margin-left: -21px;  
+    margin-left: -21px;
   }
   .alter-login {
     margin-top: 15px;

@@ -8,7 +8,7 @@ PushType.setup do |config|
   # Set the slug of the node that the `NodesFrontEndContoller` will
   # render when visting the root URL of the site (the homepage).
   # This setting can be overridden in config/routes.rb.
-  config.home_slug = 'home'
+  # config.home_slug = 'home'
 
   # Set an array of node type symbols which will not be exposed to
   # the `NodesFrontEndContoller`. These nodes will not be accessible
@@ -43,7 +43,7 @@ PushType.setup do |config|
   config.dragonfly_datastore_options = {
     project: cloud_config['project_id'],
     bucket: cloud_config['bucket_name'],
-    keyfile: File.join(Rails.root, "removal-mugshot.json") 
+    keyfile: File.join(Rails.root, "removal-mugshot.json")
   }
 
   # config.dragonfly_secret = 'b9afa6d73f822954cef98241ab1725b84c99946f36856e2be96f0b2661b75bcf'

@@ -1,17 +1,17 @@
 .stories-page {
     .hero-holder {
-        background:$text-color-primary url('../images/hero/hero-stories.jpg') no-repeat 50% 50%;
+        background:$text-color-primary image-url('hero/hero-stories.jpg') no-repeat 50% 50%;
         @include background-size(cover);
     }
     .actions {
         margin-top: 60px;
-        
+
         a {
             color: #fff;
             margin-bottom: 10px;
             display: block;
             @include opacity(0.8);
-            
+
             &:hover {
                 @include opacity(1);
                 text-decoration: none;
@@ -19,8 +19,8 @@
             img {
                @include opacity(0.7);
                &:hover {
-                  @include opacity(1); 
-               } 
+                  @include opacity(1);
+               }
             }
         }
     }
@@ -73,7 +73,7 @@
             font-size: 16px;
         }
     }
-    
+
 }
 
 .quote-item {
@@ -92,7 +92,7 @@
             @include opacity(0.3);
         }
     }
-    
+
     .quote {
         font-weight: lighter;
         font-style:italic;
@@ -113,7 +113,7 @@
         left: 50%;
         top: -40px;
         margin-left: -40px;
-        
+
         img {
             width: 80px;
         }

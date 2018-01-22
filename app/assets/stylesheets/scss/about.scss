@@ -1,6 +1,6 @@
 .about-page {
   .hero-holder {
-    background:$text-color-primary url('../images/hero/hero-about.jpg') no-repeat 50% 50%;
+    background:$text-color-primary image-url('hero/hero-about.jpg') no-repeat 50% 50%;
     @include background-size(cover);
   }
   .actions {
@@ -19,8 +19,8 @@
       img {
         @include opacity(0.7);
         &:hover {
-          @include opacity(1); 
-        } 
+          @include opacity(1);
+        }
       }
     }
   }

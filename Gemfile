@@ -79,3 +79,6 @@ gem 'canonical-rails', github: 'jumph4x/canonical-rails'
 gem "cells-rails"
 gem "cells-erb"
 gem 'dry-system'
+gem 'high_voltage'
+gem 'sitemap_generator'
+gem 'active_link_to'
