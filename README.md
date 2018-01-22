@@ -9,3 +9,8 @@ Run migration on production
 ```sh
 bundle exec rake appengine:exec -- bundle exec rake db:migrate
 ```
+
+Generate a new cell for view
+```sh
+rails generate cell comment
+```

@@ -3,7 +3,7 @@
         height: 360px;
     }
     .hero-holder {
-        background:$text-color-primary url('../images/hero/hero-contact.jpg') no-repeat 50% 50%;
+        background:$text-color-primary image-url('hero/hero-contact.jpg') no-repeat 50% 50%;
         @include background-size(cover);
         height: 360px;
     }
@@ -21,7 +21,7 @@
         max-width: 720px;
         margin: 0 auto;
         margin-bottom: 30px;
-    }    
+    }
 }
 
 
@@ -29,7 +29,7 @@
     padding-top: 90px;
     padding-bottom: 30px;
     margin-bottom: 60px;
-    
+
     .item {
         margin-bottom: 30px;
     }
