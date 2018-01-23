@@ -58,6 +58,8 @@ group :test do
   gem "shoulda-matchers"
   gem "database_cleaner"
   gem "webmock"
+  gem "simplecov", require: false
+  gem "timecop"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -82,4 +84,4 @@ gem 'dry-system'
 gem 'high_voltage'
 gem 'meta-tags'
 gem 'sitemap_generator'
-gem 'active_link_to'
+gem "delayed_job_active_record"
