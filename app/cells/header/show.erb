@@ -1,7 +1,7 @@
 <header id="header" class="header">
   <div class="container">
     <h1 class="logo">
-      <a href="index.html"><%= image_tag('logo.svg') %><span class="text">Startup Kit</span></a>
+      <%= logo %>
     </h1><!--//logo-->
     <nav class="main-nav navbar navbar-right navbar-expand-md">
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-collapse">
@@ -11,10 +11,7 @@
       </button>
       <div id="navbar-collapse" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
-          <li class="<%= current_class?(page_path('')) %> nav-item"><%= link_to 'Home', page_path(''), class: "nav-link" %></li>
-          <li class="<%= current_class?(page_path('about')) %> nav-item"><%= link_to 'About', page_path('about'), class: "nav-link" %></li>
-          <li class="<%= current_class?(page_path('process')) %> nav-item"><%= link_to 'Process', page_path('process'), class: "nav-link" %></li>
-          <li class="<%= current_class?(page_path('contact')) %> nav-item"><%= link_to 'Contact', page_path('contact'), class: "nav-link" %></li>
+          <%= navigation %>
         </ul><!--//nav-->
       </div><!--//navabr-collapse-->
     </nav><!--//main-nav-->

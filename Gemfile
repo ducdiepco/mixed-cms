@@ -80,5 +80,6 @@ gem "cells-rails"
 gem "cells-erb"
 gem 'dry-system'
 gem 'high_voltage'
+gem 'meta-tags'
 gem 'sitemap_generator'
 gem 'active_link_to'
