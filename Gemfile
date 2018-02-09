@@ -80,8 +80,11 @@ gem 'material_components_web-sass'
 gem 'canonical-rails', github: 'jumph4x/canonical-rails'
 gem "cells-rails"
 gem "cells-erb"
-gem 'dry-system'
 gem 'high_voltage'
 gem 'meta-tags'
 gem 'sitemap_generator'
 gem "delayed_job_active_record"
+gem 'dry-struct'
+gem 'dry-validation'
+gem 'dry-system-rails'
+gem 'webpacker', git: 'https://github.com/rails/webpacker.git'
