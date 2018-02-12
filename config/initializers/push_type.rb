@@ -1,3 +1,4 @@
+return nil if Rails.env.test?
 PushType.setup do |config|
 
   # By default all node types can be placed at the root of the

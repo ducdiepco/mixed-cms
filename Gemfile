@@ -43,6 +43,7 @@ group :development, :test do
   gem "pry-byebug"
   gem "pry-rails"
   gem "rspec-rails", "~> 3.6"
+  gem 'rspec-its'
 end
 
 group :development do
@@ -87,4 +88,6 @@ gem "delayed_job_active_record"
 gem 'dry-struct'
 gem 'dry-validation'
 gem 'dry-system-rails'
+gem 'dry-transaction'
 gem 'webpacker', git: 'https://github.com/rails/webpacker.git'
+gem 'simple_form'

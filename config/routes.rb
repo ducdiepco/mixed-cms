@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  #frontend
+  post :sign_up_lead, path: 'leads/sign-up', to: 'leads#create'
+
+
   # admin dashboard
   namespace :admin do
     resources :leads
