@@ -1,4 +1,4 @@
-# Removal Mugshot
+# Mixed CMS
 
 For deploy to production
 ```sh
