@@ -32,3 +32,4 @@ Gemfile.lock
 yarn-debug.log*
 .yarn-integrity
 /config/settings.yml
+/app.yaml
